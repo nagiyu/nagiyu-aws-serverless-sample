@@ -39,21 +39,24 @@ jobs:
       - name: Setup working repository
         run: |
           cd /workspace/nagiyu-template
-          git remote add template https://github.com/nagiyu/nagiyu-aws-serverless-template.git
-          git fetch template master
-          git checkout -b master template/master
-          git remote add sample https://github.com/nagiyu/nagiyu-aws-serverless-sample.git
-          git fetch sample master
-          git merge sample/master || echo "No changes to merge"
+          git fetch origin master
+          git checkout master
+          cd -
 
       - name: Copy updated files
         run: |
-          cp -r /workspace/nagiyu-template/.github/workflows/update-common.yml .github/workflows/update-common.yml
+          cp -r /workspace/nagiyu-template/common/* /workspace/nagiyu-template/
+
+      - name: Run update-common script
+        run: |
+          cd /workspace/nagiyu-template
+          ./scripts/update-common.sh
+          cd -
 
       - name: Configure git user
         run: |
-          git config user.name ${{ secrets.GITHUB_USERNAME }}
-          git config user.email ${{ secrets.GITHUB_EMAIL }}
+          git config user.name "openhands"
+          git config user.email "openhands@all-hands.dev"
 
       - name: Commit changes
         run: |
@@ -62,8 +65,8 @@ jobs:
             echo "No changes to commit."
             exit 0
           fi
-          git config user.name ${{ secrets.GITHUB_USERNAME }}
-          git config user.email ${{ secrets.GITHUB_EMAIL }}
+          git config user.name "openhands"
+          git config user.email "openhands@all-hands.dev"
           git commit -m "Update common workflow"
           git push template master
 
