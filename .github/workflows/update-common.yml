@@ -39,10 +39,12 @@ jobs:
       - name: Setup working repository
         run: |
           cd /workspace/nagiyu-template
-          git remote add origin https://github.com/nagiyu/nagiyu-aws-serverless-sample.git
-          git fetch origin master
-          git checkout -b master origin/master
-          git merge origin/master
+          git remote add template https://github.com/nagiyu/nagiyu-aws-serverless-template.git
+          git fetch template master
+          git checkout -b master template/master
+          git remote add sample https://github.com/nagiyu/nagiyu-aws-serverless-sample.git
+          git fetch sample master
+          git merge sample/master || echo "No changes to merge"
 
       - name: Copy updated files
         run: |
@@ -60,8 +62,10 @@ jobs:
             echo "No changes to commit."
             exit 0
           fi
+          git config user.name ${{ secrets.GITHUB_USERNAME }}
+          git config user.email ${{ secrets.GITHUB_EMAIL }}
           git commit -m "Update common workflow"
-          git push origin master
+          git push template master
 
 
 
