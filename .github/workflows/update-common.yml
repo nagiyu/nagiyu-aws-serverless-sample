@@ -35,46 +35,38 @@ jobs:
             GitHub
           parse-json-secrets: true
 
-      - name: Setup git remote
+      - name: Clone template repository
         run: |
-          git remote add nagiyu https://github.com/nagiyu/nagiyu-aws-serverless-template.git
+          git clone --depth 1 --branch master https://github.com/nagiyu/nagiyu-aws-serverless-template.git /tmp/nagiyu-template
 
-      - name: Create and checkout branch
+      - name: Setup working repository
         run: |
-          BRANCH_NAME=feature/update-common-$(date +'%Y%m%d-%H%M%S')
-          git checkout -b $BRANCH_NAME
+          cd /tmp/nagiyu-template
+          git remote add origin https://github.com/nagiyu/nagiyu-aws-serverless-sample.git
+          git fetch origin master
+          git checkout -b master origin/master
+          git merge origin/master
+
+      - name: Copy updated files
+        run: |
+          cp -r /tmp/nagiyu-template/.github/workflows/update-common.yml .github/workflows/update-common.yml
 
       - name: Configure git user
         run: |
           git config user.name ${{ env.GITHUB_USERNAME }}
           git config user.email ${{ env.GITHUB_EMAIL }}
 
-      - name: Check for staged changes
-        id: staged
-        run: |
-          git add .
-          git reset -- .github/workflows/update-common.yml
-          if [ -z "$(git diff --cached --name-only)" ]; then
-            echo "skip_commit=true" >> $GITHUB_ENV
-            echo "No staged changes to commit."
-          else
-            echo "skip_commit=false" >> $GITHUB_ENV
-            echo "Staged changes detected."
-          fi
-
       - name: Commit changes
-        if: env.skip_commit == 'false'
         run: |
+          git add .github/workflows/update-common.yml
+          if [ -z "$(git diff --cached --name-only)" ]; then
+            echo "No changes to commit."
+            exit 0
+          fi
           git commit -m "Update common workflow"
-          git push nagiyu HEAD:$BRANCH_NAME
+          git push origin master
 
-      - name: Create draft pull request
-        uses: peter-evans/create-pull-request@v4
-        if: env.skip_commit == 'false'
-        with:
-          token: ${{ env.GITHUB_PERSONAL_ACCESS_TOKEN }}
-          title: "[Draft] Update common workflow"
-          body: "This is an automated draft PR to update common workflow."
-          base: main
-          head: $BRANCH_NAME
-          draft: true
+
+
+
+
