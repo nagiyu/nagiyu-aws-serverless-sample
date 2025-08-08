@@ -1,6 +1,8 @@
-# System Patterns
+# システムパターン
 
-This document describes the system architecture and key technical decisions.
+このドキュメントはシステム設計におけるパターンやベストプラクティスを説明します。アーキテクチャパターン、デザインパターン、インテグレーションパターンなどを含みます。
+
+
 
 ## Architecture Overview
 

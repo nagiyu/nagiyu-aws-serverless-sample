@@ -1,6 +1,8 @@
-# Project Brief
+# プロジェクト概要
 
-This document serves as the foundation for the project, shaping all other files.
+このドキュメントはプロジェクトの概要を説明します。プロジェクトの目的、範囲、主要な成果物などを記載します。
+
+
 
 ## Core Requirements and Goals
 

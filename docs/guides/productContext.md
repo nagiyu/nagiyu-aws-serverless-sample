@@ -1,6 +1,8 @@
-# Product Context
+# プロダクトコンテキスト
 
-This document explains why the project exists and the problems it aims to solve.
+このドキュメントはプロダクトの背景や市場環境、ターゲットユーザー、競合分析などを説明します。
+
+
 
 ## Purpose
 

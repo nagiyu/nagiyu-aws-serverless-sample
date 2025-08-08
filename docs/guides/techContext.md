@@ -1,6 +1,8 @@
-# Technical Context
+# 技術コンテキスト
 
-This document covers the technologies used, development setup, and technical constraints.
+このドキュメントは使用する技術スタックや開発環境、ツールチェーン、技術的な制約や考慮事項を説明します。
+
+
 
 ## Technologies Used
 
