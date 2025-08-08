@@ -4,17 +4,17 @@
 
 
 
-## Purpose
+## 目的
 
-- Describe the motivation behind the project.
-- Explain the problems the project addresses.
+- プロジェクトの動機を説明する。
+- プロジェクトが解決する問題を説明する。
 
-## How It Should Work
+## どのように機能すべきか
 
-- Outline the expected functionality and user experience.
-- Define user experience goals.
+- 期待される機能とユーザー体験の概要を示す。
+- ユーザー体験の目標を定義する。
 
-## Target Users
+## ターゲットユーザー
 
-- Identify the primary users of the product.
-- Describe user needs and expectations.
+- プロダクトの主要なユーザーを特定する。
+- ユーザーのニーズと期待を説明する。

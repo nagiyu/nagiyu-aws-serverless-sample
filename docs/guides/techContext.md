@@ -4,22 +4,22 @@
 
 
 
-## Technologies Used
+## 使用技術
 
-- List major technologies and tools used in the project.
+- プロジェクトで使用される主要な技術とツールをリストアップする。
 
-## Development Setup
+## 開発環境設定
 
-- Describe the development environment and setup instructions.
+- 開発環境とセットアップ手順を説明する。
 
-## Technical Constraints
+## 技術的制約
 
-- Outline any technical limitations or constraints.
+- 技術的な制限や制約を概説する。
 
-## Dependencies
+## 依存関係
 
-- List key dependencies and their roles.
+- 主要な依存関係とその役割をリストアップする。
 
-## Tool Usage Patterns
+## ツール使用パターン
 
-- Describe common patterns for using tools and technologies in the project.
+- プロジェクトでのツールや技術の一般的な使用パターンを説明する。

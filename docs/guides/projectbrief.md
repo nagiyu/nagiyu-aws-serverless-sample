@@ -4,24 +4,24 @@
 
 
 
-## Core Requirements and Goals
+## コア要件と目標
 
-- Define the scope and objectives of the project.
-- Establish the primary goals to be achieved.
-- Serve as the source of truth for project scope and direction.
+- プロジェクトの範囲と目的を定義する。
+- 達成すべき主要な目標を確立する。
+- プロジェクトの範囲と方向性の真実の情報源として機能する。
 
-## Project Overview
+## プロジェクト概要
 
-Provide a high-level summary of the project, its purpose, and intended impact.
+プロジェクトの目的と意図された影響の概要を提供する。
 
-## Stakeholders
+## ステークホルダー
 
-List key stakeholders and their roles in the project.
+プロジェクトの主要なステークホルダーとその役割をリストアップする。
 
-## Timeline
+## タイムライン
 
-Outline major milestones and deadlines.
+主要なマイルストーンと締め切りを概説する。
 
-## Resources
+## リソース
 
-Identify key resources required for the project.
+プロジェクトに必要な主要なリソースを特定する。

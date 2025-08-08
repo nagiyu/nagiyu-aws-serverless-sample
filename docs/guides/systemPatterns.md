@@ -4,17 +4,17 @@
 
 
 
-## Architecture Overview
+## アーキテクチャ概要
 
-- Describe the overall system architecture.
-- Highlight key components and their relationships.
+- システム全体のアーキテクチャを説明する。
+- 主要なコンポーネントとその関係を強調する。
 
-## Design Patterns
+## デザインパターン
 
-- List and explain design patterns used in the system.
-- Describe critical implementation paths.
+- システムで使用されるデザインパターンをリストアップし説明する。
+- 重要な実装パスを説明する。
 
-## Technical Decisions
+## 技術的決定
 
-- Document important technical choices made during development.
-- Explain the rationale behind these decisions.
+- 開発中に行われた重要な技術的選択を記録する。
+- これらの決定の根拠を説明する。
