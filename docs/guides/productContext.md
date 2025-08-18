@@ -1,18 +1,18 @@
-# Product Context
+# 製品コンテキスト
 
-## Environment
+## 環境
 
-- The product is deployed on a cloud infrastructure optimized for our performance and availability needs.
-- It supports web and mobile platforms tailored to our user base.
+・ The product is deployed on a cloud infrastructure optimized for our performance and availability needs.
+・ It supports web and mobile platforms tailored to our user base.
 
-## Stakeholders
+## ステークホルダー
 
-- Primary end users who rely on the product for daily tasks.
-- Product owners responsible for strategic direction and prioritization.
-- Development and support teams ensuring continuous improvement and maintenance.
+・ Primary end users who rely on the product for daily tasks.
+・ Product owners responsible for strategic direction and prioritization.
+・ Development and support teams ensuring continuous improvement and maintenance.
 
-## Constraints
+## 制約
 
-- Compliance with applicable industry regulations and security standards.
-- Designed to handle anticipated user growth and data volume.
-- Integration with existing enterprise systems and workflows.
+・ Compliance with applicable industry regulations and security standards.
+・ Designed to handle anticipated user growth and data volume.
+・ Integration with existing enterprise systems and workflows.

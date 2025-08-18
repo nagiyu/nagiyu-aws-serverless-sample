@@ -1,16 +1,16 @@
-# System Patterns
+# システムパターン
 
-## Architectural Patterns
+## アーキテクチャパターン
 
-- Microservices architecture to enable modularity and independent deployment.
-- Event-driven architecture for asynchronous processing and scalability.
+・ Microservices architecture to enable modularity and independent deployment.
+・ Event-driven architecture for asynchronous processing and scalability.
 
-## Design Patterns
+## デザインパターン
 
-- Singleton pattern for managing shared resources and configurations.
-- Factory pattern to encapsulate object creation and promote flexibility.
+・ Singleton pattern for managing shared resources and configurations.
+・ Factory pattern to encapsulate object creation and promote flexibility.
 
-## Integration Patterns
+## 統合パターン
 
-- API Gateway to manage and route client requests efficiently.
-- Message Broker for reliable communication between microservices.
+・ API Gateway to manage and route client requests efficiently.
+・ Message Broker for reliable communication between microservices.
