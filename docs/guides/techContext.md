@@ -2,12 +2,12 @@
 
 ## 技術
 
-・ Cloud computing platforms selected based on project requirements and scalability.
-・ Containerization technologies to facilitate deployment and environment consistency.
-・ Programming languages and frameworks chosen for performance and maintainability.
+・ プロジェクトの要件とスケーラビリティに基づいて選択されたクラウドコンピューティングプラットフォーム。
+・ デプロイメントと環境の一貫性を促進するコンテナ化技術。
+・ パフォーマンスと保守性のために選択されたプログラミング言語とフレームワーク。
 
 ## ツール
 
-・ CI/CD pipelines configured for automated testing, integration, and deployment.
-・ Monitoring and logging tools to ensure system health and facilitate troubleshooting.
-・ Version control systems and collaboration platforms to support development workflows.
+・ 自動テスト、統合、およびデプロイメントのために構成されたCI/CDパイプライン。
+・ システムの健全性を確保しトラブルシューティングを促進する監視およびログ記録ツール。
+・ 開発ワークフローをサポートするバージョン管理システムおよびコラボレーションプラットフォーム。

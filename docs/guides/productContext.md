@@ -2,17 +2,17 @@
 
 ## 環境
 
-・ The product is deployed on a cloud infrastructure optimized for our performance and availability needs.
-・ It supports web and mobile platforms tailored to our user base.
+・ 製品は、パフォーマンスと可用性のニーズに最適化されたクラウドインフラストラクチャに展開されています。
+・ ユーザーベースに合わせたWebおよびモバイルプラットフォームをサポートしています。
 
 ## ステークホルダー
 
-・ Primary end users who rely on the product for daily tasks.
-・ Product owners responsible for strategic direction and prioritization.
-・ Development and support teams ensuring continuous improvement and maintenance.
+・ 日常業務で製品に依存する主要なエンドユーザー。
+・ 戦略的方向性と優先順位付けを担当するプロダクトオーナー。
+・ 継続的な改善と保守を確保する開発およびサポートチーム。
 
 ## 制約
 
-・ Compliance with applicable industry regulations and security standards.
-・ Designed to handle anticipated user growth and data volume.
-・ Integration with existing enterprise systems and workflows.
+・ 適用される業界規制およびセキュリティ基準の遵守。
+・ 予想されるユーザー増加とデータ量に対応する設計。
+・ 既存の企業システムおよびワークフローとの統合。

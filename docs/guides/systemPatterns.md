@@ -2,15 +2,15 @@
 
 ## アーキテクチャパターン
 
-・ Microservices architecture to enable modularity and independent deployment.
-・ Event-driven architecture for asynchronous processing and scalability.
+・ モジュール性と独立したデプロイメントを可能にするマイクロサービスアーキテクチャ。
+・ 非同期処理とスケーラビリティのためのイベント駆動型アーキテクチャ。
 
 ## デザインパターン
 
-・ Singleton pattern for managing shared resources and configurations.
-・ Factory pattern to encapsulate object creation and promote flexibility.
+・ 共有リソースと設定を管理するためのシングルトンパターン。
+・ オブジェクトの生成をカプセル化し柔軟性を促進するファクトリーパターン。
 
 ## 統合パターン
 
-・ API Gateway to manage and route client requests efficiently.
-・ Message Broker for reliable communication between microservices.
+・ クライアントリクエストを効率的に管理およびルーティングするAPIゲートウェイ。
+・ マイクロサービス間の信頼性の高い通信のためのメッセージブローカー。
