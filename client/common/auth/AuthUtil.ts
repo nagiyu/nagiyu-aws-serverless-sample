@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { getServerSession, Session } from 'next-auth';
 
-import { authOptions } from '@client-common/auth/authOptions';
+import { getAuthOptions } from '@client-common/auth/authOptions';
 
 export default class AuthUtil {
   /**
@@ -9,6 +9,7 @@ export default class AuthUtil {
    * @returns {Promise<Session | null>} The current session or null if not authenticated.
    */
   public static async getServerSession(): Promise<Session | null> {
+    const authOptions = await getAuthOptions();
     return await getServerSession(authOptions);
   }
 

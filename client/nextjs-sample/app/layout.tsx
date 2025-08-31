@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 import AuthUtil from '@client-common/auth/AuthUtil';
@@ -7,16 +6,6 @@ import SignInButton from '@client-common/components/inputs/Buttons/SignInButton'
 import SignoutButton from '@client-common/components/inputs/Buttons/SignOutButton';
 import BasicAppBar from '@client-common/components/surfaces/AppBars/BasicAppBar';
 import LinkMenu, { MenuItemData } from '@client-common/components/navigations/Menus/LinkMenu';
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -58,7 +47,7 @@ export default async function RootLayout({
       <head>
         <link rel="manifest" href="/manifest.webmanifest" />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body>
         <BasicAppBar
           center={
             <div>Next.js Sample</div>
